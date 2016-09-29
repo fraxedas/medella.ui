@@ -18,8 +18,8 @@ angular.module('medellauiApp').config(function ($urlRouterProvider, $stateProvid
       templateUrl: '/views/main.html'
     })
 
-    .state('profile', {
-      url: '/profile',
-      templateUrl: '/views/profile.html'
+    .state('register', {
+      url: '/register',
+      templateUrl: '/views/register.html'
     });
 });
