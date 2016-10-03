@@ -8,8 +8,19 @@
  * Controller of the medellauiApp
  */
 angular.module('medellauiApp')
-  .controller('RegisterCtrl', function ($scope) {
+  .controller('RegisterCtrl', function ($scope, $rootScope, $http, alert) {
     $scope.submit = function () {
-      console.log("submit");
+      
+      var url = '/';
+      var user = {};
+      
+      $http.post(url, user)
+        .success(function (res) {
+          console.log(res);
+        })
+        .error(function (error) {
+            alert('warning', 'Opps!', 'Cloud not register');
+        })
+        ;
     };
   });
