@@ -16,5 +16,5 @@ angular.module('medellauiApp')
       alertTimeout = $timeout(function () {
         $rootScope.alert.show = false;
       }, timeout || 2000);
-    }
+    };
   });

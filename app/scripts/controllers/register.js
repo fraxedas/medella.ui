@@ -16,10 +16,10 @@ angular.module('medellauiApp')
       
       $http.post(url, user)
         .success(function (res) {
-          console.log(res);
+            alert('success', 'OK!', 'You are now registered' + res);
         })
         .error(function (error) {
-            alert('warning', 'Opps!', 'Cloud not register');
+            alert('warning', 'Opps!', 'Cloud not register ' + error);
         })
         ;
     };
